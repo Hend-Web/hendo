@@ -248,12 +248,12 @@ a{
 }
 /* Plan */
 .plan-name{
-    color:#fff;
+    color:#fff; 
     margin: 0;
     font-weight: 500;
     font-size: 2.4rem;
 
-}
+} 
 .plan-price{
     font-size: 6rem;
 }
