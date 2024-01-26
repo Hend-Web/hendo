@@ -466,3 +466,43 @@ a{
     max-height: 100vh;
     opacity: 1;
 }
+/* Blocks */
+.block{
+    --padding-virtical:6rem;
+    padding: var(--padding-virtical) 2rem;
+    /* we removed "border: 2px solid red;" property from this
+       class because we added it just in the beginning to see
+       the implementation of our work.
+    */
+}
+.block-header{
+    text-align: center;
+}
+.block-heading{
+    margin-top: 0;
+}
+.block-dark{
+    background: #000;
+    color: #7b858b;
+}
+.block-dark .block-heading{
+    color: #fff;
+}
+.block-skewed-right{
+    padding-bottom: calc(var(--padding-virtical) + 4rem);
+    clip-path: polygon(0% 0%,100% 0%, 100% 100%, 0% 80%);
+}
+.block-skewed-left{
+    padding-bottom: calc(var(--padding-virtical) + 4rem);
+    clip-path: polygon(0% 0%,100% 0%, 100% 80%, 0% 100%);
+}
+.container{
+    /* we add this property because whatever the size of screen
+       the content of the section stay in range of the space 
+       that we determine. 
+       also we put the margin: auto to make the browser divide
+       the exra rest of horizintly space equaly.
+    */
+    max-width: 1140px;
+    margin: 0 auto;
+}
