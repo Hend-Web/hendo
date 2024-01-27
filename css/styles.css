@@ -351,6 +351,7 @@ a{
 .media--image{
     margin-top: 1rem ;
 }
+
 /* Quotes */
 .quote{
     font-size: 3rem;
@@ -632,4 +633,23 @@ a{
 .block-plans .card{
     max-width:500px;
     margin: 0 auto;
+}
+/* Features */
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+.feature:first-of-type{
+    margin-top:  6rem;
+}
+.feature-heading{
+    margin: 1rem 0;
+}
+.feature-image{
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature-content{
+        order: 2;
+    }
 }
