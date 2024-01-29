@@ -12,70 +12,48 @@
       <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <section class="block block-dark block-skewed-right block-showcase">
+    <section class="block">
       <header class="block-header">
-        <h2>User-friendly Control Panal</h2>
+        <h2>What our Customer are saying</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, at.</p>
       </header>
-      <div class="container grid -1x2">
-        <picture class="block-showcase-image">
-          <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
-          <source type="image/jpg" srcset="images/ipad.jpg 1x, images/ipad@2x.jpg 2x">
-          <img src="images/ipad.jpg" alt="">
-        </picture>
-        <ul class="list">
-          <li>
-            <div class="media">
-              <div class="media--image">
-                <svg class="icon icon-primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
-                </svg>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid-1x2">
+              <div class="testimonial-image">
+                  <img src="images/testimonial.jpg"
+                      alt="A happy, smiling custumer"> 
+                  <span class="icon-container icon-container--accent">
+                      <svg class="icon icon-white icon-small">
+                          <use xlink:href="images/sprite.svg#quotes"></use>
+                      </svg>
+                  </span>
               </div>
-              <div class="media--body">
-                <h3 class="media--title">Easy Start & Managed Update</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Esse, odit laborum? Deserunt 
-                  asperiores officia nisi consequuntur illo eum ipsum rem.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media--image">
-                <svg class="icon icon-primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
-              </div>
-              <div class="media--body">
-                <h3 class="media--title">Easy Start & Managed Update</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Esse, odit laborum? Deserunt 
-                  asperiores officia nisi consequuntur illo eum ipsum rem.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media--image">
-                <svg class="icon icon-primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media--body">
-                <h3 class="media--title">Easy Start & Managed Update</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Esse, odit laborum? Deserunt 
-                  asperiores officia nisi consequuntur illo eum ipsum rem.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>    
+              <blockquote class="quote">
+                  <p class="quote-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Iure dolores voluptate unde mollitia voluptatem suscipit
+                      vel veniam animi accusamus alias!
+                  </p>
+                  <footer>
+                      <div class="media">
+                          <div class="media--image">
+                              <svg class="icon icon-primary quote-line">
+                                  <use xlink:href="images/sprite.svg#line"></use>
+                              </svg>
+                          </div>
+                          <div class="media--body">
+                              <h3 class="media--title quote-auther">John Smith</h3>
+                              <p class="quote-organization">
+                                  ABC Company
+                              </p>
+                          </div>
+                      </div>
+                  </footer>
+              </blockquote>
+          </div>
+      </div>
+      </div>
     </section>
     <script src="js/main.js"></script>
 </body>
