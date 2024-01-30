@@ -478,7 +478,6 @@ a{
     font-size: 3rem;
 }
 .collapsible-chevron{
-    background: #02cdf1;
     transform: rotate(-90deg);
     transition: transform 0.3s;
 }
@@ -673,5 +672,66 @@ a{
     .block-showcase-image > img{
         width: auto;
         max-width: 700px;
+    }
+}
+/* Footer */
+.footer{
+    background: #232323;
+}
+.footer-section{
+    padding: 2rem;
+    border-bottom:  1px solid #393939;
+}
+.footer-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer a{
+    color: #777;
+    transition: color .3s;
+}
+.footer a:hover{
+    color: #fff;
+}
+.footer-brand{
+    margin-top: 5rem;
+    text-align: center;
+}
+.footer-copyright{
+    font-family: 2.1rem;
+    color: #fff;
+    opacity: .3;
+}
+@media screen and (min-width:768px) {
+    .footer-sections{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    .footer .collapsible-chevron{
+        display: none;
+    }
+    .footer .collapsible-content{
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer-brand{
+        order: -1;
+        margin-top: 1rem;
+    }
+    .footer-brand img{
+        /* TODO: Consider refactoring this and applaying it to all images */
+        width: 100%;
+        max-width: 230px;
+    }
+    .footer-copyright{
+        font-size: 1.5rem;
+    }
+    .footer-section{
+        border: 0;
+    }
+    .footer-section .list{
+        margin: 0;
+    }
+    .footer-heading{
+        font-size: 1.6rem;
     }
 }
